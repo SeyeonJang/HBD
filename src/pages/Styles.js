@@ -1,9 +1,7 @@
 import styled from 'styled-components';
-import { Canvas } from '@react-three/fiber';
 
 export const Wrapper = styled.div`
-    width: 10 0%;
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -25,4 +23,58 @@ export const MainText = styled.p`
     font-size: 80px;
     color: rgba(255, 255, 255, ${(props) => props.opacity || 1});
     margin: -6px;
+`;
+
+export const SubText = styled.p`
+    font-size: 20px;
+    color: white;
+    margin-top: 410px;
+    font-weight: 700;
+`;
+
+export const KoreanText = styled.p`
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.68);
+    margin-top: 12px;
+    font-weight: 500;
+`;
+
+export const WhiteContainer = styled.div`
+    width: 78%;
+    height: auto;
+    padding: 20px;
+    margin-top: 17px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const TitleText = styled.p`
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 15px;
+`;
+
+export const TableRow = styled.div`
+    width: 90%;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+`;
+
+export const PlainText = styled.p`
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+`;
+
+export const NeedText = styled.p`
+    font-size: 12px;
+    margin-bottom: ${(props) => props.isLast=='True' ? '0px' : '12px'};
 `;
