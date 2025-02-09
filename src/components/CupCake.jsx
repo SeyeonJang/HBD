@@ -3,7 +3,7 @@ import { useFrame } from '@react-three/fiber';
 import { useGLTF, OrbitControls, Center, Environment } from '@react-three/drei';
 import { PerspectiveCamera } from '@react-three/drei';
 
-export default function Main() {
+export default function CupCake() {
     const modelRef = useRef();
 
     useFrame((state, delta) => {

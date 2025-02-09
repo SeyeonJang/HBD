@@ -1,13 +1,10 @@
 import { useState } from 'react'
-import { Canvas } from '@react-three/fiber';
-import Main from './pages/Main';
+import HomePage from './pages/HomePage';
 
 function App() {
 
   return (
-    <Canvas style={{ height: '45vh' }}>
-      <Main/>
-    </Canvas>
+    <HomePage/>
   );
 }
 
