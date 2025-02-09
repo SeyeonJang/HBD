@@ -5,9 +5,7 @@ import { PerspectiveCamera } from '@react-three/drei';
 
 export default function Main() {
     const modelRef = useRef();
-    const { nodes, materials } = useGLTF('/cupcake.glb');
 
-    // 모델을 자동으로 회전시키는 애니메이션
     useFrame((state, delta) => {
         if (modelRef.current) {
         modelRef.current.rotation.y += delta * 0.5;
@@ -25,7 +23,7 @@ export default function Main() {
 
         {/* 카메라 컨트롤 */}
         <OrbitControls 
-            enableZoom={true}
+            enableZoom={false}
             enablePan={true}
             enableRotate={true}
             makeDefault
